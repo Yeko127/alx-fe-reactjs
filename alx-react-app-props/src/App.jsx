@@ -19,8 +19,7 @@ function App() {
   return (
     <>
       <WelcomeMessage />
-      <UserProfile 
-      name= "Alice" age= {25}  bio= "Loves hiking and photography"/>
+      <UserProfile />
       <Header />
       <MainContent />
       <Footer />
