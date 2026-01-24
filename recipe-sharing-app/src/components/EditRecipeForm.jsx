@@ -8,8 +8,8 @@
     const [title, setTitle] = useState(recipe.title);
     const [description, setDescription] = useState(recipe.description)
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleSubmit = (event) => {
+        event.preventDefault();
 
         updateRecipe({
             id: recipe.id,
@@ -26,13 +26,13 @@
             <input t
                 type="text" 
                 value={title} 
-                onChange={(e)=> setTitle(e.target.value)} required/>
+                onChange={(e)=> setTitle(event.target.value)} required/>
         </div>
         <div>
             <label>Description</label>
             <textarea 
                 value={description} 
-                onChange={(e) =>setDescription(e.target.value)}  required/>
+                onChange={(event) =>setDescription(event.target.value)}  required/>
         </div>       
        
         <button type="submit">update Recipe</button>
