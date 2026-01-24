@@ -8,7 +8,7 @@
     const {id} = useParams();
 
     const recipe = useRecipeStore(state =>
-      state.recipes.find(recipe => recipe.id.toString() ===id)
+      state.recipes.find(recipe => recipe.id.toString() === id)
     );
     
     if (!recipe) {
