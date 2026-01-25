@@ -35,7 +35,7 @@ const useRecipeStore = create(set => ({
         fav.category && recipe.category === fav.category
       )
     });
-  }
+  },
   
 
   addRecipe: (recipe) => set(state => ({ recipes: [...state.recipes, recipe] })),
