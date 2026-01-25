@@ -10,6 +10,9 @@
     const recipe = useRecipeStore(state =>
       state.recipes.find(recipe => recipe.id.toString() === id)
     );
+    const addFavorite = useRecipeStore(state => state.addFavorite);
+    const removeFavorite = useRecipeStore(state => state.removeFavorite);
+    const isFavorite = useRecipeStore(state=> recipe? state.isFavorite(recipe.id) : false);
     
     if (!recipe) {
         return <p>Recipe not found</p>
@@ -22,8 +25,20 @@
         
         <EditRecipeForm recipe={recipe} />
         <DeleteRecipeButton recipeId={recipe.id} />
+
+        <button 
+         onClick={() =>
+          isFavorite
+          ? removeFavorite(recipe.id)
+          : addFavorite(recipe.id)
+        }
+        >
+          {isFavorite? "Remove Favorite" : "Add to Favorites"}
+        </button>
       </div>
     );
+
+   
   };
 
   export default RecipeDetails;

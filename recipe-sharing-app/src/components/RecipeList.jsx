@@ -14,10 +14,10 @@
           <p>No recipes found.</p>
         ): (
           filteredRecipes.map(recipe => (
-            <div key={recipe.id} className="mb-3 p-3 border rounded">
-              <h3 className="font-bold">{recipe.title}</h3>
+            <div key={recipe.id}>
+              <h3>{recipe.title}</h3>
               <p>{recipe.description}</p>
-              <Link to={`/recipes/${recipe.id}`} className="text-blue-500">
+              <Link to={`/recipes/${recipe.id}`}>
               View Details
               </Link>
             </div>
