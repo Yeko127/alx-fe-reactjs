@@ -52,17 +52,15 @@ const Search = () => {
                     src={user.avatar_url}
                     alt={user.login}
                     width="120"
-                    />               <>
-                <h2>{user.name || user.login}</h2>
+                    />  
+                <>             
+                <p>{user.name || user.login}</p>
                 <a href={user.html_url} target="_blank" rel="noopener noreferrer">
                    View GitHub Profile
                 </a>
                 </>
                 </div>
-            )}
-
-            
-            
+            )}            
         </div>
     );
 }
