@@ -43,8 +43,8 @@ const Search = () => {
                 <button type="submit">Search</button>
             </form>
 
-            {loading && <p>Loadin ...</p>}
-            {error && <p>Looks like we cannot find the user</p>}
+            {loading && <p>Loading ...</p>}
+            {error && <p>"Looks like we cant find the user"</p>}
 
             {user && (
                 <div>
