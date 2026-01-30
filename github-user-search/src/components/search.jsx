@@ -16,7 +16,7 @@ const Search = () => {
         if (!username.trim()) return;
 
         setLoading(true);
-        setError("");
+        setError('');
         setUser(null);
 
         try {
