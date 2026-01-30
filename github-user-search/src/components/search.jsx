@@ -34,7 +34,7 @@ const Search = () => {
             <form onSubmit={handleSubmit}>
                 <input 
                 type="text"
-                placeholder="Your GITHUB username"
+                placeholder="Enter username"
                 value={username}
                 onChange={(event) => setUsername(event.target.value)}
                 style={{display:"block", margin:"10px 0"}}

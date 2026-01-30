@@ -1,6 +1,6 @@
 
 import './App.css'
-import search from './components/search'
+import Search from './components/Search'
 
 function App() {
   
@@ -9,7 +9,8 @@ function App() {
     <div>
       <h1>Github User Search</h1>
       <p>Search for github users using the GITHUB API</p>
-      <search />
+      <Search/>
+      
     </div>
     
   )

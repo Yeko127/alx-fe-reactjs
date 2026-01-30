@@ -7,4 +7,5 @@ export const fetchUserData = async (username) => {
     return response.data;
 };
 
+export default GITHUB_API_URL;
 
