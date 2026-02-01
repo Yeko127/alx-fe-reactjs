@@ -102,7 +102,7 @@ const Search = () => {
                         <div>
                             <p className="font-bold">{user.login}</p>
                             <a 
-                            href={user.html.url}
+                            href={user.html_url}
                             target="_blank"
                             className="text-blue-500"
                             >
