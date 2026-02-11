@@ -3,12 +3,55 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://via.placeholder.com/150"
-  },
-  {
+    "image": "https://via.placeholder.com/150",
+     "ingredients": [
+      "200g spaghetti",
+      "100g minced beef",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "400g canned tomatoes"
+     ],
+     "instructions": [
+      "Cook spaghetti according to package instructions.",
+      "Sauté onion and garlic until soft.",
+      "Add minced beef and cook until browned.",
+      "Add tomatoes and simmer 20 minutes.",
+      "Serve sauce over spaghetti."
+     ]
+    },
+    {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://via.placeholder.com/150"
-  }
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+       "500g boneless chicken thighs or breast, cut into bite-sized pieces",
+       "1 cup plain yogurt",
+       "2 tbsp lemon juice",
+       "2 tsp ground cumin",
+       "2 tsp ground coriander",
+       "1 tsp turmeric powder",
+       "1 tsp chili powder",
+       "1 tsp garam masala",
+       "2 tsp salt, divided",
+       "3 tbsp vegetable oil",
+       "1 large onion, finely chopped",
+       "3 cloves garlic, minced",
+       "1 tbsp fresh ginger, minced",
+       "400g canned chopped tomatoes",
+       "1 cup heavy cream or coconut cream",
+       "Fresh cilantro (coriander) leaves for garnish"
+    ],
+    "instructions": [
+      "In a bowl, mix yogurt, lemon juice, 1 tsp salt, cumin, coriander, turmeric, chili powder, and half the garam masala.",
+      "Add chicken pieces to the marinade, coat well, and refrigerate for at least 1 hour (or overnight for best flavor).",
+      "Heat 2 tbsp oil in a large pan over medium heat. Add onions and sauté until golden brown.",
+      "Add garlic and ginger, cook 1-2 minutes until fragrant.",
+      "Add the remaining garam masala and sauté for 30 seconds.",
+      "Add chopped tomatoes and cook for 10 minutes until the sauce thickens and oil separates slightly.",
+      "Add marinated chicken pieces to the sauce. Cover and cook 15-20 minutes until chicken is cooked through.",
+      "Stir in the cream and simmer 5 minutes more. Adjust salt to taste.",
+      "Garnish with fresh cilantro and serve hot with rice or naan."
+   ]
+ }
 ]
