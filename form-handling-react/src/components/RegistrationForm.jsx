@@ -10,8 +10,23 @@ const RegistrationForm = () => {
     const validate = () => {
         let newErrors ={};
 
-        if (!username.trim()) {
+        if (!username) {
             newErrors.username = "Username is required"
+        }
+        if (!email) {
+            newErrors.email = "Email is required"
+        }
+        if (!password) {
+            newErrors.password = "Password is required"
+        }
+        if (username && username.trim() === "") {
+            newErrors.username = "Username cannot be empty space";
+        }
+        if (email && email.trim() ==="") {
+            newErrors.email = "Email cannot be empty space";
+        }
+        if (password && password.trim() ==="") {
+            newErrors.password ="Password cannot be empty spaces";
         }
         return newErrors;
     };
