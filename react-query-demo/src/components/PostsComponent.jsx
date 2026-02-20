@@ -9,12 +9,16 @@ const fetchPosts = async () => {
   return response.json();
 };
 
-function PostsComponent() {
+const PostsComponent = () => {
   // Using useQuery hook to fetch posts
   const { data, isLoading, isError, error, refetch } = useQuery({
     queryKey: ['posts'],
     queryFn: fetchPosts,
-    staleTime: 60000, // Consider data fresh for 1 minute
+
+    cacheTime: 1000 * 60 * 5,
+    staleTime: 1000 * 60 * 2,
+    refetchOnWindowFocus: false,
+    keepPreviousData: true,
   });
 
   if (isLoading) {
