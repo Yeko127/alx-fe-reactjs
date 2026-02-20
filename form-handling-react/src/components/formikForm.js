@@ -1,18 +1,18 @@
 import { Formik, Form, Field, ErrorMessage } from "formik"
 import *as Yup from "yup";
 
-const FormikForm= () => {
+const formikForm= () => {
     const validationSchema = Yup.object({
        username: Yup.string()
-       .required("Username is reuired"),
+       .required("Username is required"),
 
        email: Yup.string()
        .email("Invalid email format")
-       .required("Email is required")
+       .required("Email is required"),
 
        password: Yup.string()
        .min(6, "Password must be at least 6 characters")
-       .required("Passwordis required")
+       .required("Password is required")
     });
 
     return (
@@ -20,8 +20,8 @@ const FormikForm= () => {
             <h2 className="text-2xl font-bold mb-6 text-center">Register</h2>
             <Formik
                 initialValues={{
-                    username: ""
-                    email: ""
+                    username: "",
+                    email: "",
                     password: "",
                 }}
                 validationSchema={validationSchema}
@@ -31,7 +31,7 @@ const FormikForm= () => {
                     resetForm();
                 }}
             >
-                <form>
+                <Form>
                 {/* Username */}
 
                 <div className="mb-4">
@@ -85,7 +85,7 @@ const FormikForm= () => {
                     Register
                 </button>
 
-                </form>
+                </Form>
 
             </Formik>
         </div>
@@ -96,4 +96,4 @@ const FormikForm= () => {
     
     );
 };
-export default FormikForm;
+export default formikForm;
